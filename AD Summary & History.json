@@ -1,0 +1,115 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "node backend -c \"5riesq9cu57p5jqlkoebv7t0ah7jvj\" -s \"CHak1orkzDIOSfpM0UJKF4PAZPdjAEfdSPMIsfrY9pc=\"",
+  "backendFolderName": "extension-getting-started\\services",
+  "certificateExceptions": [],
+  "extensionViews": [
+    {
+      "channelId": "151020644",
+      "configurationAnchor": "panel",
+      "displayChannelName": "rgbknights",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "1",
+      "isPopout": false,
+      "label": "Summary",
+      "linked": false,
+      "linkedUserId": "",
+      "orientation": "Portrait",
+      "type": "panel",
+      "viewerType": "Broadcaster"
+    },
+    {
+      "channelId": "151020644",
+      "configurationAnchor": "panel",
+      "displayChannelName": "rgbknights",
+      "features": {
+        "isBitsEnabled": false,
+        "isChatEnabled": false,
+        "isSubscriptionStatusAvailable": false
+      },
+      "frameSize": {
+        "width": 1280,
+        "height": 720
+      },
+      "id": "2",
+      "isPopout": false,
+      "label": "Setup",
+      "linked": true,
+      "linkedUserId": "265737932",
+      "orientation": "Portrait",
+      "type": "config",
+      "viewerType": "Broadcaster"
+    }
+  ],
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "RGBKnights",
+    "bitsEnabled": false,
+    "canInstall": true,
+    "configUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/config.html",
+    "configurationLocation": "hosted",
+    "description": "Version 0.1 - BETA -- released Jan 24th, 2021\n\nThe new Dota2 AD Tracker serves as a mini-profile on your Twitch page, with data provided from abilitydraft.datdota.com\n\nWhat's included:\n- Your player avatar, username, activity level, and rank\n- Stats from your last few matches, including outcome, hero, KDA, match awards, role, lane, and how long ago the match ended\n- Your win rate from your last matches\n- Links to open your abilitydraft.datdota.com match breakdown pages",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/logo4cc81a7c-cecb-4c74-9e23-929295c71276",
+    "iconUrls": {
+      "100x100": "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/logo4cc81a7c-cecb-4c74-9e23-929295c71276",
+      "24x24": "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/taskbar9c8805bf-8f76-41bb-b80f-02afa60907e4",
+      "300x200": "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/discovery092c27ac-cd13-4f4a-8266-54cb80d1e86b"
+    },
+    "id": "5riesq9cu57p5jqlkoebv7t0ah7jvj",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "Dota2 Ability Draft Summary & History",
+    "panelHeight": 300,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": true,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [
+      "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/screenshot3387594e-8028-4324-afc0-d09d4975c28c"
+    ],
+    "sku": "",
+    "state": "Assets Uploaded",
+    "subscriptionsSupportLevel": "none",
+    "summary": " Dota2 Ability Draft Player Summary and Match History",
+    "supportEmail": "master@rgbknights.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerSummary": "",
+    "viewerUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/panel.html",
+    "viewerUrls": {
+      "panel": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/panel.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/panel.html",
+        "height": 300,
+        "canLinkExternalContent": true
+      },
+      "config": {
+        "viewerUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/config.html",
+        "canLinkExternalContent": true
+      }
+    },
+    "whitelistedConfigUrls": [
+      ""
+    ],
+    "whitelistedPanelUrls": [
+      ""
+    ]
+  },
+  "frontendCommand": "",
+  "frontendFolderName": "extension-getting-started\\public",
+  "name": "AD Summary & History",
+  "usingRandomFrontendHostingPort": false,
+  "version": 3
+}
