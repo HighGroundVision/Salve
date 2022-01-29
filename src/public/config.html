@@ -6,21 +6,34 @@
 </head>
 
 <body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-    <div id="app"></div>
+    <div id="app">
+        <h2>Setup</h2>
+        <p>Enter any of the following to get your Dota Account Id. If you already know it skip this step.</p>
+        <ul>
+            <li>Steam ID (STEAM_0:0:651XXXX)</li>
+            <li>Steam ID3 (U:1:130XXXXX)</li>
+            <li>Steam # 32 (130XXXXX)</li>
+            <li>Steam # 64 (765XXXXXXXXXXXXXX)</li>
+            <li>Windrun Profile (https://windrun.io/players/130XXXXX)</li>
+            <li>OpenDota Profile (https://www.opendota.com/players/130XXXXX)</li>
+            <li>Dotabuff Profile (http://dotabuff.com/players/130XXXXX)</li>
+            <li>Steam Profile (http://steamcommunity.com/profiles/765XXXXXXXXXXXXXX)</li>
+        </ul>
+        <div>
+            <input type="text" id="identity" />
+            <input type="button" id="check" value="Find" />
+            <p id="check-error" style="color:red;display: none;"></p>
+        </div>
+        <p>Enter your Dota Account Id. If you do not know it use option above to find it.</p>
+        <div>
+            <input type="text" id="accountid" />
+            <input type="button" id="save" value="Save" />
+            <p id="account-error" style="color:red;display: none;"></p>
+        </div>
+    </div>
     <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
     <script src="jquery-3.3.1.min.js"></script>
     <script src="config.js" type="text/javascript"></script>
-    <h2>Setup</h2>
-    <p>Configure this extension before you go live to provide the best experience for your viewers.</p>
-    <label for="accountid">Account Id</label>
-    <input type="text" id="accountid" />
-    <input type="button" id="save" disabled value="Save" />
-    <p>Currently displaying data on your panel for:</p>
-    <div>
-        <img id="avatar" src="https://steamuserimages-a.akamaihd.net/ugc/868480752636433334/1D2881C5C9B3AD28A1D8852903A8F9E1FF45C2C8/" style="width: 32px; height: 32px;display: inline;" />
-        <p id="persona" style="display: inline; font-size: 1.5em; vertical-align: top;">Unknown</p>
-    </div>
-
 </body>
 
 </html>

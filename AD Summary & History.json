@@ -55,9 +55,9 @@
     "authorName": "RGBKnights",
     "bitsEnabled": false,
     "canInstall": true,
-    "configUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/config.html",
+    "configUrl": "https://localhost:8080/config.html",
     "configurationLocation": "hosted",
-    "description": "Version 0.1 - BETA -- released Jan 24th, 2021\n\nThe new Dota2 AD Tracker serves as a mini-profile on your Twitch page, with data provided from abilitydraft.datdota.com\n\nWhat's included:\n- Your player avatar, username, activity level, and rank\n- Stats from your last few matches, including outcome, hero, KDA, match awards, role, lane, and how long ago the match ended\n- Your win rate from your last matches\n- Links to open your abilitydraft.datdota.com match breakdown pages",
+    "description": "Version 1 -- released Feb 02, 2022\n\nThe new Dota2 AD Tracker serves as a mini-profile on your Twitch page, with data provided from abilitydraft.datdota.com\n\nWhat's included:\n- Your player avatar, username, activity level, and rank\n- Stats from your last few matches, including outcome, hero, KDA, match awards, role, lane, and how long ago the match ended\n- Your win rate from your last matches\n- Links to open your abilitydraft.datdota.com match breakdown pages",
     "eulaTosUrl": "",
     "hasChatSupport": false,
     "iconUrl": "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/logo4cc81a7c-cecb-4c74-9e23-929295c71276",
@@ -70,33 +70,33 @@
     "installationCount": -42,
     "liveConfigUrl": "",
     "name": "Dota2 Ability Draft Summary & History",
-    "panelHeight": 300,
+    "panelHeight": 500,
     "privacyPolicyUrl": "",
     "requestIdentityLink": true,
     "requiredBroadcasterAbilities": [],
     "screenshotUrls": [
-      "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/screenshot3387594e-8028-4324-afc0-d09d4975c28c"
+      "https://extensions-discovery-images.twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/screenshot049264cc-abe9-4ea7-9edf-eb7edd6dd104"
     ],
     "sku": "",
-    "state": "Assets Uploaded",
+    "state": "Testing",
     "subscriptionsSupportLevel": "none",
     "summary": " Dota2 Ability Draft Player Summary and Match History",
     "supportEmail": "master@rgbknights.com",
     "vendorCode": "",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "viewerSummary": "",
-    "viewerUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/panel.html",
+    "viewerUrl": "https://localhost:8080/panel.html",
     "viewerUrls": {
-      "panel": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/panel.html"
+      "panel": "https://localhost:8080/panel.html"
     },
     "views": {
       "panel": {
-        "viewerUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/panel.html",
-        "height": 300,
+        "viewerUrl": "https://localhost:8080/panel.html",
+        "height": 500,
         "canLinkExternalContent": true
       },
       "config": {
-        "viewerUrl": "https://5riesq9cu57p5jqlkoebv7t0ah7jvj.ext-twitch.tv/5riesq9cu57p5jqlkoebv7t0ah7jvj/0.0.1/93491165ac5518f29ebaa43eaf6ff84d/config.html",
+        "viewerUrl": "https://localhost:8080/config.html",
         "canLinkExternalContent": true
       }
     },
@@ -104,11 +104,11 @@
       ""
     ],
     "whitelistedPanelUrls": [
-      ""
+      "https://windrun.io/"
     ]
   },
   "frontendCommand": "",
-  "frontendFolderName": "extension-getting-started\\public",
+  "frontendFolderName": "src\\public",
   "name": "AD Summary & History",
   "usingRandomFrontendHostingPort": false,
   "version": 3

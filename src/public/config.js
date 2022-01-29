@@ -1,4 +1,4 @@
-let token, userId, config, theme;
+let  config, theme;
 
 const twitch = window.Twitch.ext;
 
@@ -11,21 +11,10 @@ twitch.onContext((context) => {
     }
 });
 
-twitch.onAuthorized((auth) => {
-    token = auth.token;
-    userId = auth.userId;
-    $('#save').removeAttr('disabled');
-});
-
 twitch.configuration.onChanged(function() {
-    //twitch.rig.log("global", twitch.configuration.global);
-    //twitch.rig.log("broadcaster", twitch.configuration.broadcaster);
-    //twitch.rig.log("developer", twitch.configuration.developer);
-
     if (twitch.configuration.broadcaster && twitch.configuration.broadcaster.content) {
         config = JSON.parse(twitch.configuration.broadcaster.content);
         $("#accountid").val(config.account);
-        UpdateUser(config.account);
     }
 });
 
@@ -33,17 +22,37 @@ twitch.onError(function(err) {
     // twitch.rig.log("Error", err);
 });
 
-async function UpdateUser(account) {
-    var response = await $.get(`https://eaglesong.azurewebsites.net/api/profile/${account}`);
-    $("#avatar").attr("src", response.avatar);
-    $("#persona").text(response.persona);
-}
+const API_URL = "https://eaglesong.azurewebsites.net/api"
 
 $(function() {
-    $('#save').click(function() {
-        var accountid = $("#accountid").val();
-        UpdateUser(accountid);
-        var context = { account: accountid };
-        twitch.configuration.set("broadcaster", "0.0.1", JSON.stringify(context));
+    $('#check').click(async function() {
+        try {
+            var identity = $("#identity").val();
+            var slug = encodeURIComponent(identity);
+
+            $("#check-error").text("").hide();
+            $("#identity").val("");
+            
+            var data = await $.get(`${API_URL}/check/${slug}`);
+
+            $("#accountid").val(data.account_id);
+        } catch (error) {
+            $("#check-error").text("Could not find an Account Id for the identity entered.").show();
+        }
+    });
+
+    $('#save').click(async function() {
+        try {
+            $("#account-error").text("").hide();
+            var accountid = $("#accountid").val();
+
+            await $.get(`${API_URL}/profile/${accountid}`);
+
+            var context = { account: accountid };
+            twitch.configuration.set("broadcaster", "1.0.0", JSON.stringify(context));
+        } catch (error) {
+            $("#accountid").val("");
+            $("#account-error").text("Not able to find Account Id that matches the value entered.").show();
+        }
     });
 });
